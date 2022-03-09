@@ -13,24 +13,16 @@ AdminLTE Asset Bundle
 This package contains an [Asset Bundle for Yii 2.0 Framework](http://www.yiiframework.com/doc-2.0/guide-structure-assets.html) 
 which registers the CSS files for the AdminLTE user-interface.
 
-The CSS files are installed via Yii's recommended usage of the `fxp/composer-asset-plugin` v1.1.1 or later.
-
 
 Installation
 ------------
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
-To install AdminLTE v2 run:
+To install AdminLTE v3 run:
 
 ```
-composer require dmstr/yii2-adminlte-asset "^2.1"
-```
-
-To install AdminLTE v1 run:
-
-```
-composer require dmstr/yii2-adminlte-asset "^1"
+composer require dmstr/yii2-adminlte-asset "^0.1.0"
 ```
 
 FAQ

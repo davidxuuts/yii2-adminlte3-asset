@@ -5,7 +5,6 @@ use yii\helpers\Html;
 /** @var \yii\web\View $this */
 /** @var string $content */
 
-$this->registerCssFile('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700');
 if (Yii::$app->controller->action->id === 'login') {
     /**
      * Do not use this code in your template. Remove it. 

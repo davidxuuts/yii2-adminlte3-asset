@@ -1,5 +1,5 @@
 <?php
-namespace dmstr\adminlte\widgets;
+namespace davidxu\adminlte3\widgets;
 
 use Yii;
 use yii\helpers\ArrayHelper;

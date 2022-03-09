@@ -1,7 +1,7 @@
 <?php
 
 use yii\bootstrap4\Breadcrumbs;
-use dmstr\adminlte\widgets\Alert;
+use davidxu\adminlte3\widgets\Alert;
 
 ?>
 <div class="content-wrapper">

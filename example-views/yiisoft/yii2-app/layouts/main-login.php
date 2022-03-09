@@ -5,7 +5,7 @@ use yii\helpers\Html;
 /** @var \yii\web\View $this */
 /** @var string $content */
 
-dmstr\adminlte\web\AdminLteAsset::register($this);
+davidxu\adminlte3\web\AdminLteAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
