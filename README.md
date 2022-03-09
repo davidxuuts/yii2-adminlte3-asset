@@ -1,9 +1,9 @@
 AdminLTE Asset Bundle
 =====================
 
-[![Latest Stable Version](https://poser.pugx.org/dmstr/yii2-adminlte-asset/v/stable.svg)](https://packagist.org/packages/dmstr/yii2-adminlte-asset) 
-[![Total Downloads](https://poser.pugx.org/dmstr/yii2-adminlte-asset/downloads.svg)](https://packagist.org/packages/dmstr/yii2-adminlte-asset)
-[![License](https://poser.pugx.org/dmstr/yii2-adminlte-asset/license.svg)](https://packagist.org/packages/dmstr/yii2-adminlte-asset)
+[![Latest Stable Version](https://poser.pugx.org/dmstr/yii2-adminlte-asset/v/stable.svg)](https://packagist.org/packages/davidxu/yii2-adminlte3-asset) 
+[![Total Downloads](https://poser.pugx.org/dmstr/yii2-adminlte-asset/downloads.svg)](https://packagist.org/packages/davidxu/yii2-adminlte3-asset)
+[![License](https://poser.pugx.org/dmstr/yii2-adminlte-asset/license.svg)](https://packagist.org/packages/davidxu/yii2-adminlte3-asset)
 
 
 *Backend UI for Yii2 Framework, based on [AdminLTE](https://github.com/almasaeed2010/AdminLTE)*
@@ -22,39 +22,23 @@ The preferred way to install this extension is through [composer](http://getcomp
 To install AdminLTE v3 run:
 
 ```
-composer require dmstr/yii2-adminlte-asset "^0.1.0"
+composer require davidxu/yii2-adminlte3-asset "^0.1.0"
 ```
 
 FAQ
 ---
 
-### Web-font usage
-
-AdminLTE dropped web-font inclusion in `2.4.0`, so you need to include your desired font manually, ie.
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-
-> Inclusion via CDN is not recommended for production, please adjust this to your project's asset-bundling workflow.
-
-For details see [#140](https://github.com/dmstr/yii2-adminlte-asset/issues/140).
-
 ### Upgrading
 
 When upgrading please see the [AdminLTE upgrade guide](https://adminlte.io/docs/3.0/upgrade-guide.html) for adjustments you need to make in your views.
 
-### Composer installation
-
-- For issues with `DmitryBaranovskiy/eve.git`, please see [#128](https://github.com/dmstr/yii2-adminlte-asset/issues/128#issuecomment-361895922) and [#113](https://github.com/dmstr/yii2-adminlte-asset/issues/133#issuecomment-337179853).
-
 ### Compatibility matrix
 
-| yii2-adminlte-asset | AdminLTE | Font Awesome
-|---|---|---|
-| 2.4 | 2.0 - 2.3 | required
-| 2.5 | 2.4 | required
-| 3.0 | 2.4 | -
+| yii2-adminlte-asset | AdminLTE 
+|---------------------|----------|
+| 0.1.0               | 3.2      | required
 
-> For other [issues](https://github.com/dmstr/yii2-adminlte-asset/issues?utf8=%E2%9C%93&q=is%3Aissue), please search GitHub first.
+> For other [issues](https://github.com/davidxu/yii2-adminlte3-asset/issues?utf8=%E2%9C%93&q=is%3Aissue), please search GitHub first.
 
 
 Quick Start
@@ -69,24 +53,9 @@ For Yii 2 [Advanced Application Template](https://github.com/yiisoft/yii2-app-ad
     'view' => [
          'theme' => [
              'pathMap' => [
-                '@app/views' => '@vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app'
+                '@app/views' => '@vendor/davidxu/yii2-adminlte3-asset/example-views/yiisoft/yii2-app'
              ],
          ],
-    ],
-],
-```
-
-
-For [phd5](https://github.com/dmstr/phd5-app) application
-
-```php
-'components' => [
-    'view' => [
-        'theme' => [
-            'pathMap' => [
-                '@app/views' => '@vendor/dmstr/yii2-adminlte-asset/example-views/testing/app'
-            ],
-        ],
     ],
 ],
 ```
@@ -99,7 +68,7 @@ Therefore it is recommended to **copy the views into your application** and adju
 Customization
 -------------
 
-- Copy files from `vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app` (or other theme) to `@app/views`.
+- Copy files from `vendor/davidxu/yii2-adminlte3-asset/example-views/yiisoft/yii2-app` (or other theme) to `@app/views`.
 - Remove the custom `view` configuration from your application by deleting the path mappings, if you have made them before.
 - Edit your views adhering to html markup `vendor/almasaeed2010/adminlte/pages`
 
@@ -124,7 +93,7 @@ class AdminLtePluginAsset extends AssetBundle
         // more plugin Js here
     ];
     public $depends = [
-        'dmstr\adminlte\web\AdminLteAsset',
+        'davidxu\adminlte3\web\AdminLteAsset',
     ];
 }
 ```
@@ -189,9 +158,7 @@ To add a badge for a item:
 ]
 ```
 
-By default to icons will be added prefix of [Font Awesome](https://fontawesome.com/)
-
-### Template for Gii CRUD generator
+### Template for Gii CRUD generator <TBD>
 
 Tell Gii about our template. The setting is made in the config file:
 
@@ -203,7 +170,7 @@ if (YII_ENV_DEV) {
             'crud' => [
                 'class' => 'yii\gii\generators\crud\Generator',
                 'templates' => [
-                    'adminlte' => '@vendor/dmstr/yii2-adminlte-asset/gii/templates/crud/simple',
+                    'adminlte' => '@vendor/davdixu/yii2-adminlte3-asset/gii/templates/crud/simple',
                 ]
             ]
         ],
@@ -211,28 +178,10 @@ if (YII_ENV_DEV) {
 }
 ```
 
-Testing
--------
-
-Go to the tests folder and start the testing stack
-
-    cd tests
-    docker-compose up -d
-    
-Install `yii2-adminlte-asset` in the testing application
-
-    docker-compose exec php composer install
-    
-Open testing URLs in your browser
-
-    http://docker.local:20580/test
-    http://docker.local:20580/test/login    
-
-
 Further Information
 -------------------
 
 For AdminLTE documentation, please read https://almsaeedstudio.com/themes/AdminLTE/documentation/index.html
 
-> Namespacing rules follow the Yii 2.0 framework structure, eg. `dmstr\adminlte\web` for the Asset Bundle.
+> Namespacing rules follow the Yii 2.0 framework structure, eg. `davidxu\adminlte3\web` for the Asset Bundle.
  

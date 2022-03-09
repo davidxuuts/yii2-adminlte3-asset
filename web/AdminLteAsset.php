@@ -2,6 +2,9 @@
 namespace davidxu\adminlte3\web;
 
 use yii\web\AssetBundle as BaseAdminLteAsset;
+use yii\web\YiiAsset;
+use yii\bootstrap4\BootstrapAsset;
+use yii\bootstrap4\BootstrapPluginAsset;
 
 /**
  * AdminLte AssetBundle
@@ -17,8 +20,8 @@ class AdminLteAsset extends BaseAdminLteAsset
         'js/adminlte.min.js'
     ];
     public $depends = [
-        'yii\web\YiiAsset',
-        'yii\bootstrap4\BootstrapAsset',
-        'yii\bootstrap4\BootstrapPluginAsset',
+        YiiAsset::class,
+        BootstrapAsset::class,
+        BootstrapPluginAsset::class,
     ];
 }
