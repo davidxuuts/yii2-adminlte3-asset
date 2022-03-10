@@ -1,11 +1,14 @@
 <?php
 
+use davidxu\adminlte3\widgets\Alert;
 use yii\helpers\Html;
+use yii\web\View;
+use davidxu\adminlte3\web\AdminLteAsset;
 
-/** @var \yii\web\View $this */
+/** @var View $this */
 /** @var string $content */
 
-davidxu\adminlte3\web\AdminLteAsset::register($this);
+AdminLteAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -28,7 +31,11 @@ davidxu\adminlte3\web\AdminLteAsset::register($this);
             <?= Html::a('<b>Admin</b>LTE', ['/site/login']); ?>
         </div>
 
-        <?= \dmstr\adminlte\widgets\Alert::widget(); ?>
+        <?php try {
+            echo Alert::widget();
+        } catch (Exception $e) {
+            echo YII_DEBUG ? $e->getMessage() : null;
+        } ?>
 
         <?= $content ?>
     </div>
@@ -38,3 +45,4 @@ davidxu\adminlte3\web\AdminLteAsset::register($this);
 
 </html>
 <?php $this->endPage() ?>
+<?php

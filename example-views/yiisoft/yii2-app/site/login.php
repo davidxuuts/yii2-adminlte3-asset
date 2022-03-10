@@ -17,14 +17,14 @@ $this->title = 'Sign In';
 
         <?= $form->field($model, 'username', [
             'options' => ['class' => 'form-group has-feedback'],
-            'inputTemplate' => '{input}<div class="input-group-append"><div class="input-group-text"><i class="fas fa-envelope"></i></div></div>',
+            'inputTemplate' => '{input}<div class="input-group-append"><div class="input-group-text"><i class="fas fa-user"></i></div></div>',
             'template' => "{beginWrapper}{input}{error}{endWrapper}",
             'wrapperOptions' => [
                 'class' => 'input-group mb-3'
             ]
         ])
             ->label(false)
-            ->textInput(['placeholder' => $model->getAttributeLabel('email')]); ?>
+            ->textInput(['placeholder' => $model->getAttributeLabel('username')]); ?>
 
         <?= $form->field($model, 'password', [
             'options' => ['class' => 'form-group has-feedback'],
