@@ -10,8 +10,10 @@ $urlParams = $generator->generateUrlParams();
 
 echo "<?php\n";
 ?>
+use yii\web\View;
+use yii\helpers\Html;
 
-/* @var $this yii\web\View */
+/* @var $this View */
 /* @var $model <?= ltrim($generator->modelClass, '\\') ?> */
 
 $this->title = <?= $generator->generateString('Update {modelClass}: ', ['modelClass' => Inflector::camel2words(StringHelper::basename($generator->modelClass))]) ?> . $model-><?= $generator->getNameAttribute() ?>;
@@ -19,10 +21,15 @@ $this->params['breadcrumbs'][] = ['label' => <?= $generator->generateString(Infl
 $this->params['breadcrumbs'][] = ['label' => $model-><?= $generator->getNameAttribute() ?>, 'url' => ['view', <?= $urlParams ?>]];
 $this->params['breadcrumbs'][] = <?= $generator->generateString('Update') ?>;
 ?>
-<div class="<?= Inflector::camel2id(StringHelper::basename($generator->modelClass)) ?>-update">
-
-    <?= "<?= " ?>$this->render('_form', [
-        'model' => $model,
-    ]) ?>
-
+<div class="<?= Inflector::camel2id(StringHelper::basename($generator->modelClass)) ?>-update card card-outline card-secondary">
+    <div class="card-header">
+        <h4 class="card-title"><?= "<?= Html::encode(\$this->title); ?>" ?> </h4>
+    </div>
+    <div class="card-body pt-3 pl-0 pr-0">
+        <div class="container">
+            <?= "<?= " ?>$this->render('_form', [
+                'model' => $model,
+            ]) ?>
+        </div>
+    </div>
 </div>

@@ -22,7 +22,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 To install AdminLTE v3 run:
 
 ```
-composer require davidxu/yii2-adminlte3-asset "^0.1.0"
+composer require davidxu/yii2-adminlte3-asset "^0.4.0"
 ```
 
 FAQ
@@ -36,7 +36,7 @@ When upgrading please see the [AdminLTE upgrade guide](https://adminlte.io/docs/
 
 | yii2-adminlte-asset | AdminLTE 
 |---------------------|----------|
-| 0.1.0               | 3.2      | required
+| 0.4.0               | 3.2      | required
 
 > For other [issues](https://github.com/davidxu/yii2-adminlte3-asset/issues?utf8=%E2%9C%93&q=is%3Aissue), please search GitHub first.
 

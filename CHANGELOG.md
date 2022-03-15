@@ -10,4 +10,7 @@ CHANGELOG
 
 ## 0.3.0
  * correct href
- * update readme  
+ * update readme 
+
+## 0.4.0
+ * update gii crud views templates 
