@@ -18,7 +18,7 @@ use yii\web\View;
 /* @var $form yii\bootstrap4\ActiveForm */
 ?>
 
-<div class="<?= Inflector::camel2id(StringHelper::basename($generator->modelClass)) ?>-search card card-outline card-secondary">
+<div class="<?= Inflector::camel2id(StringHelper::basename($generator->modelClass)) ?>-search card">
 
     <?= "<?php " ?>$form = ActiveForm::begin([
         'action' => ['index'],

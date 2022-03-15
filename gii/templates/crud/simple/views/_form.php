@@ -25,7 +25,7 @@ use yii\web\View;
 /* @var $form ActiveForm */
 ?>
 
-<div class="<?= Inflector::camel2id(StringHelper::basename($generator->modelClass)) ?>-form card card-outline card-secondary">
+<div class="<?= Inflector::camel2id(StringHelper::basename($generator->modelClass)) ?>-form card">
     <?= "<?php " ?>$form = ActiveForm::begin([
     'layout' => 'horizontal',
         'fieldConfig' => [
