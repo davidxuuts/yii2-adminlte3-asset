@@ -70,6 +70,15 @@ $this->params['breadcrumbs'][] = $this->title;
                         [
                             'class' => ActionColumn::class,
                             'header' => Yii::t('app', 'Operate'),
+                            'template' => '{edit} {delete}',
+                            'buttons' => [
+                                'edit' => static function ($url, $model, $key) {
+                                    return Html::a(Yii::t('app', 'Edit'), ['edit', 'id' => $model->id]);
+                                },
+                                'delete' => static function ($url, $model, $key) {
+                                    return Html::a(Yii::t('app', 'Delete'), ['destroy', 'id' => $model->id]);
+                                },
+                            ],
                         ],
                     ],
                 ]);
