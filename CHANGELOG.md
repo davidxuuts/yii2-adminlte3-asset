@@ -14,3 +14,9 @@ CHANGELOG
 
 ## 0.4.0
  * update gii crud views templates 
+
+## 0.5.0
+* add ajax templates
+
+## 0.6.0
+* add davidxu/yii2-base dependence
