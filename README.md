@@ -8,9 +8,9 @@ AdminLTE Asset Bundle
 
 *Backend UI for Yii2 Framework, based on [AdminLTE](https://github.com/almasaeed2010/AdminLTE)*
 
-![Yii2 AdminLTE theme Light](./docs/images/ThemeLight.png)
+![Yii2 AdminLTE theme Light](docs/images/ThemeLight.png)
 
-![Yii2 AdminLTE theme Dark](./docs/images/ThemeDark.png)
+![Yii2 AdminLTE theme Dark](docs/images/ThemeDark.png)
 
 This package contains an [Asset Bundle for Yii 2.0 Framework](http://www.yiiframework.com/doc-2.0/guide-structure-assets.html) 
 which registers the CSS files for the AdminLTE user-interface.
@@ -24,7 +24,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 To install AdminLTE v3 run:
 
 ```
-composer require davidxu/yii2-adminlte3-asset "^0.5.0"
+composer require davidxu/yii2-adminlte3-asset "^1.0"
 ```
 
 FAQ
@@ -37,8 +37,8 @@ When upgrading please see the [AdminLTE upgrade guide](https://adminlte.io/docs/
 ### Compatibility matrix
 
 | yii2-adminlte3-asset | AdminLTE 
-|---------------------|----------|
-| 0.5.0               | 3.2      | required
+|----------------------|----------|
+| 1.0                  | 3.2      | required
 
 > For other [issues](https://github.com/davidxu/yii2-adminlte3-asset/issues?utf8=%E2%9C%93&q=is%3Aissue), please search GitHub first.
 
@@ -128,6 +128,19 @@ About <small>static page</small>
 <div class="site-about">
     <p> This is the About page. You may modify the following file to customize its content: </p>
     <code><?= __FILE__ ?></code>
+</div>
+```
+
+### Dark mode
+
+If you want to switch dark/light mode by a switch, you can add the following code.
+
+```php
+<div class="theme-switch-wrapper nav-link">
+    <label class="theme-switch" for="darkSwitch">
+        <input type="checkbox" id="darkSwitch">
+        <span class="slider round"></span>
+    </label>
 </div>
 ```
 

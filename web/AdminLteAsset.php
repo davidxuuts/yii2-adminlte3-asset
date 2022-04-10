@@ -1,27 +1,22 @@
 <?php
 namespace davidxu\adminlte3\web;
 
-use yii\web\AssetBundle as BaseAdminLteAsset;
-use yii\web\YiiAsset;
-use yii\bootstrap4\BootstrapAsset;
-use yii\bootstrap4\BootstrapPluginAsset;
+use davidxu\base\assets\AppAsset;
+use yii\web\AssetBundle;
 
 /**
- * AdminLte AssetBundle
+ * AdminLteAsset
  * @since 0.1
  */
-class AdminLteAsset extends BaseAdminLteAsset
+class AdminLteAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/almasaeed2010/adminlte/dist';
-    public $css = [
-        'css/adminlte.min.css',
-    ];
+    public $sourcePath = __DIR__ . '../';
+    public $css = [];
     public $js = [
-        'js/adminlte.min.js'
+        'js/dark-switch.js',
     ];
+    
     public $depends = [
-        YiiAsset::class,
-        BootstrapAsset::class,
-        BootstrapPluginAsset::class,
+        AppAsset::class,
     ];
 }

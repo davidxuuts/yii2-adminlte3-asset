@@ -19,7 +19,7 @@
         }
     ],
     "require": {
-        "davidxu/yii2-base": "^0.1.0",
+        "davidxu/yii2-base": "^1.0",
         "almasaeed2010/adminlte": "^3.2"
     },
     "autoload": {
