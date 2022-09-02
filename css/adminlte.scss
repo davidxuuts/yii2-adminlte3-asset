@@ -1,0 +1,34 @@
+$primary-color: #666;
+$secondary-color: #999;
+$dark-primary-color: #eee;
+$dark-secondary-color: #ddd;
+.theme-switch {
+  display: inline-block;
+  height: 24px;
+  position: relative;
+  width: 50px;
+  input {
+    display: none;
+  }
+}
+a {
+  color: $primary-color;
+  &:hover {
+    color: $secondary-color;
+  }
+  &:visited {
+    color: $secondary-color;
+  }
+}
+
+.dark-mode {
+  a {
+    color: $dark-primary-color;
+    &:hover {
+      color: $dark-secondary-color;
+    }
+    &:visited {
+      color: $dark-secondary-color;
+    }
+  }
+}

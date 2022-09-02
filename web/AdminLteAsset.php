@@ -1,7 +1,6 @@
 <?php
 namespace davidxu\adminlte3\web;
 
-use davidxu\base\assets\AppAsset;
 use yii\web\AssetBundle;
 
 /**
@@ -10,13 +9,16 @@ use yii\web\AssetBundle;
  */
 class AdminLteAsset extends AssetBundle
 {
-    public $sourcePath = __DIR__ . '../';
-    public $css = [];
+    public $sourcePath = '@davidxu/adminlte3/';
+    public $css = [
+        'css/adminlte.css',
+    ];
     public $js = [
         'js/dark-switch.js',
+        'js/adminlte.js',
     ];
     
     public $depends = [
-        AppAsset::class,
+        BaseAdminLteAsset::class,
     ];
 }
