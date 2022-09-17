@@ -1,7 +1,7 @@
 <?php
 namespace davidxu\adminlte3\web;
 
-use davidxu\base\assets\AppAsset;
+use davidxu\base\assets\BaseAppAsset;
 use yii\web\AssetBundle;
 
 /**
@@ -18,6 +18,6 @@ class BaseAdminLteAsset extends AssetBundle
         'js/adminlte.min.js'
     ];
     public $depends = [
-        AppAsset::class,
+        BaseAppAsset::class,
     ];
 }
