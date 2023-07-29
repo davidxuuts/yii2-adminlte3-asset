@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2023.
+ * @author David Xu <david.xu.uts@163.com>
+ * All rights reserved.
+ */
+
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 const currentTheme = localStorage.getItem('theme');
 const mainHeader = document.querySelector('.main-header');

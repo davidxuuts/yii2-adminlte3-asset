@@ -1,8 +1,8 @@
 <?php
-/**
- * @link http://www.yiiframework.com/
- * @copyright Copyright (c) 2008 Yii Software LLC
- * @license http://www.yiiframework.com/license/
+/*
+ * Copyright (c) 2008-2023.
+ * @author David Xu <david.xu.uts@163.com>
+ * All rights reserved.
  */
 
 namespace davidxu\adminlte3\widgets;
