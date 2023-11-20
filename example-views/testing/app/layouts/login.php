@@ -28,7 +28,7 @@ use yii\helpers\Html;
 
     <div class="login-box">
         <div class="login-logo">
-            <?= Html::a('<b>Admin</b>LTE', Yii::$app->homeUrl); ?>
+            <?= Html::a('<b>AdminUser</b>LTE', Yii::$app->homeUrl); ?>
         </div>
 
         <?= \dmstr\adminlte\widgets\Alert::widget(); ?>

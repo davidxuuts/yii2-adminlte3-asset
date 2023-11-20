@@ -33,7 +33,7 @@ AdminLteAsset::register($this);
 
     <div class="login-box">
         <div class="login-logo">
-            <?= Html::a('<b>Admin</b>LTE', ['/site/login']); ?>
+            <?= Html::a('<b>AdminUser</b>LTE', ['/site/login']); ?>
         </div>
 
         <?php try {
